@@ -25,7 +25,7 @@ describe('<Button />', () => {
     const onClick = cy.stub().as('clickHandler')
     mount(Button, {
       slots: { default: 'Click Me' },
-      attrs: { onClick }
+      attrs: { onClick },
     })
     cy.get('button').click()
     cy.get('@clickHandler').should('have.been.calledOnce')
@@ -34,7 +34,7 @@ describe('<Button />', () => {
   it('is disabled when disabled prop is true', () => {
     mount(Button, {
       props: { disabled: true },
-      slots: { default: 'Disabled' }
+      slots: { default: 'Disabled' },
     })
     cy.get('button').should('be.disabled')
   })
@@ -42,14 +42,14 @@ describe('<Button />', () => {
   it('applies custom class', () => {
     mount(Button, {
       attrs: { class: 'custom-class' },
-      slots: { default: 'Styled' }
+      slots: { default: 'Styled' },
     })
     cy.get('button').should('have.class', 'custom-class')
   })
 
   it('renders slot content', () => {
     mount(Button, {
-      slots: { default: '<span>Slot Content</span>' }
+      slots: { default: '<span>Slot Content</span>' },
     })
     cy.get('button').should('contain.text', 'Slot Content')
     cy.get('button span').should('exist')
