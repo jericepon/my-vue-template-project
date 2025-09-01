@@ -1,18 +1,19 @@
 import { defineStore } from 'pinia'
+import { markRaw, type Component } from 'vue'
 
-import type { Component } from 'vue'
+type ModalProps = {
+  id: string
+  title?: string
+  content?: string | null
+  props?: Record<string, any>
+  isOpen: boolean
+  onClose?: () => void
+  component?: Component
+  componentProps?: Record<string, any>
+  disableOutsideClick?: boolean
+}
 export interface ModalState {
-  stack: Array<{
-    id: string
-    title?: string
-    content?: string | null
-    props?: Record<string, any>
-    isOpen: boolean
-    onClose?: () => void
-    component?: Component
-    componentProps?: Record<string, any>
-    disableOutsideClick?: boolean
-  }>
+  stack: Array<ModalProps>
 }
 
 export const useModalStore = defineStore('modal', {
@@ -21,7 +22,11 @@ export const useModalStore = defineStore('modal', {
   }),
   actions: {
     open(modal: Omit<ModalState['stack'][0], 'isOpen'>) {
-      this.stack.push({ ...modal, isOpen: true })
+      const modalToPush = { ...modal, isOpen: true }
+      if (modalToPush.component) {
+        modalToPush.component = markRaw(modalToPush.component)
+      }
+      this.stack.push(modalToPush)
     },
     close(id?: string) {
       const idx = id

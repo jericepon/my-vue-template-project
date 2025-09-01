@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { useModal } from '@/composables/useModal'
 import Button from '@/components/Button/Button.vue'
-import TwoModalTestContent from './TwoModalTestContent.vue'
 const { open } = useModal()
 const toggleModal = () => {
   open({
-    title: 'Example Modal 2',
-    component: TwoModalTestContent,
+    title: 'Example Modal 3',
     disableOutsideClick: true,
   })
 }
