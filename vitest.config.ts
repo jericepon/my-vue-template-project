@@ -6,5 +6,6 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
+    exclude: ['node_modules', 'dist', 'playwright', '**/e2e/**'],
   },
 });
