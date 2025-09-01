@@ -1,0 +1,98 @@
+.title-hero {
+  font-size: var(--typography-title-hero-size);
+  font-family: var(--typography-title-hero-font-family), sans-serif;
+  font-weight: var(--typography-title-hero-font-weight);
+  line-height: 1.2;
+}
+.title-page {
+  font-size: var(--typography-title-page-size-base);
+  font-family: var(--typography-title-page-font-family), sans-serif;
+  font-weight: var(--typography-title-page-font-weight);
+  line-height: 1.2;
+}
+.subtitle {
+  font-size: var(--typography-subtitle-size-base);
+  font-family: var(--typography-subtitle-font-family), sans-serif;
+  font-weight: var(--typography-subtitle-font-weight);
+  line-height: 1.2;
+}
+.heading {
+  font-size: var(--typography-heading-size-base);
+  font-family: var(--typography-heading-font-family), sans-serif;
+  font-weight: var(--typography-heading-font-weight);
+  line-height: 1.2;
+}
+.subheading {
+  font-size: var(--typography-subheading-size-medium);
+  font-family: var(--typography-subheading-font-family), sans-serif;
+  font-weight: var(--typography-subheading-font-weight);
+  line-height: 1.2;
+}
+.body-base {
+  font-size: var(--typography-body-size-medium);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-weight: var(--typography-body-font-weight-regular);
+  line-height: 1.4;
+}
+.body-strong {
+  font-size: var(--typography-body-size-medium);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-weight: var(--typography-body-font-weight-strong);
+  line-height: 1.4;
+}
+.body-emphasis {
+  font-size: var(--typography-body-size-medium);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-style: italic;
+  font-weight: var(--typography-body-font-weight-regular);
+  line-height: 1.4;
+}
+.body-link {
+  font-size: var(--typography-body-size-medium);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-weight: var(--typography-body-font-weight-regular);
+  text-decoration: underline;
+  line-height: 1.4;
+}
+.body-small {
+  font-size: var(--typography-body-size-small);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-weight: var(--typography-body-font-weight-regular);
+  line-height: 1.4;
+}
+.body-small-strong {
+  font-size: var(--typography-body-size-small);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-weight: var(--typography-body-font-weight-strong);
+  line-height: 1.4;
+}
+.body-code {
+  font-size: var(--typography-code-size-base);
+  font-family: var(--typography-code-font-family), monospace;
+  font-weight: var(--typography-code-font-weight);
+  line-height: 1;
+}
+.single-line__body-base {
+  font-size: var(--typography-body-size-medium);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-weight: var(--typography-body-font-weight-regular);
+  line-height: 1;
+}
+.single-line__body-small-strong {
+  font-size: var(--typography-body-size-small);
+  font-family: var(--typography-body-font-family), sans-serif;
+  font-weight: var(--typography-body-font-weight-strong);
+  line-height: 1;
+}
+.utilities__componentnotes__regular {
+  font-size: var(--typography-code-size-base);
+  font-family: var(--typography-code-font-family), monospace;
+  font-weight: var(--typography-code-font-weight);
+  line-height: 1.4;
+}
+.utilities__componentnotes__bold {
+  font-size: var(--typography-code-size-base);
+  font-family: var(--typography-code-font-family), monospace;
+  font-weight: var(--typography-body-font-weight-strong);
+  line-height: 1.4;
+}
