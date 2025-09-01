@@ -7,8 +7,8 @@ import ModalTestContent from './components/ModalTestContent.vue'
 const { open } = useModal()
 const toggleModal = () => {
   open({
-    title: 'Example Modal',
-    content: '<p>This is an example modal content.</p>',
+    title: 'First Example Modal',
+    content: '<p>This is an first example modal content.</p>',
   })
 }
 

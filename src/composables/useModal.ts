@@ -12,7 +12,10 @@ export function useModal() {
   const { stack } = storeToRefs(modalStore)
 
   function open(
-    modal: Omit<ModalState['stack'][0], 'isOpen' | 'id' | 'component' | 'disableOutsideClick'> & {
+    modal: Omit<
+      ModalState['stack'][0],
+      'isOpen' | 'id' | 'component' | 'disableOutsideClick'
+    > & {
       component?: Component
       componentProps?: Record<string, any>
       disableOutsideClick?: boolean
