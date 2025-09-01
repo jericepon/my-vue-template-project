@@ -1,5 +1,8 @@
 <template>
-  <div class="cy-test" style="display: flex; flex-direction: column; gap: 16px; padding: 24px">
+  <div
+    class="cy-test"
+    style="display: flex; flex-direction: column; gap: 16px; padding: 24px"
+  >
     <Button color="primary">Primary</Button>
     <Button color="neutral">Neutral</Button>
     <Button color="subtle">Subtle</Button>
